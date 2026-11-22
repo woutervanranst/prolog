@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{report}
 
-\usepackage[latin1]{inputenc}		%NOTE: Save File as 'Western (ISO Latin 1)'
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[dutch]{babel}
 
@@ -30,7 +30,7 @@
 
 \author{
 	\textbf{Wouter Van Ranst} \\ 
-	s0163272, $2^{e}$ Master Computerwetenschappen -- Artificiële Intelligentie}
+	s0163272, $2^{e}$ Master Computerwetenschappen -- ArtificiÃ«le Intelligentie}
 
 \date{1 augustus 2008 -- 9 september 2008}
 
@@ -48,13 +48,13 @@
 	Naam Bedrijf:	& Cronos NV, XT-i Extreme Implementations \\
     Adres Bedrijf:	& Veldkant 35A, 2550 Kontich \\
 	\\
-	Naam Stagebegeleider:	& Günther Van Roey, Tim Goffings \\
+	Naam Stagebegeleider:	& GÃ¼nther Van Roey, Tim Goffings \\
 	Stageperiode:	& 1 augustus -- 22 augustus, 3 september -- 9 september 2008
   \end{tabular}
 \end{table}
 	
 	\section{Beschrijving van het bedrijf}
-XT-i is een IT servicebedrijf en levert audit, consultancy en projectservices aan klanten uit alle marktsegmenten. Het bedrijf focust op projecten die Java (J2EE) en XML technologieën integreren. Opgericht in 2001 als deel van de Cronos groep, telt het bedrijf momenteel ongeveer 50 werknemers. Cronos stelt in totaal, over alle deelbedrijven, ongeveer 1250 mensen tewerk.
+XT-i is een IT servicebedrijf en levert audit, consultancy en projectservices aan klanten uit alle marktsegmenten. Het bedrijf focust op projecten die Java (J2EE) en XML technologieÃ«n integreren. Opgericht in 2001 als deel van de Cronos groep, telt het bedrijf momenteel ongeveer 50 werknemers. Cronos stelt in totaal, over alle deelbedrijven, ongeveer 1250 mensen tewerk.
 
 \chapter{Verslag}
 	\section{Probleemstelling}
@@ -104,7 +104,7 @@ CHR (Constraint Handling Rules\footnote{http://www.cs.kuleuven.be/$\sim$dtai/pro
 ECLiPSe\footnote{http://eclipse-clp.org/} is een constraint logic programming (CLP) systeem dat gebouwd is bovenop Prolog. Het biedt een aantal extra libraries aan die o.m. het adresseren van lijsten (een klassiek pijnpunt in Prolog) gemakkelijker maakt, heuristische zoekfuncties aanbiedt en integer programming mogelijk maakt.
 		
 		\subsection{Java}
-Java is een all-round, objectgeorienteerde programmeertaal waarin bijna alles gemaakt kan worden. Het is een hogere programeertaal die at runtime geïnterpreteerd wordt. Hierdoor is er veel meer overhead dan nodig voor dit \textit{eenvoudige} probleem.
+Java is een all-round, objectgeorienteerde programmeertaal waarin bijna alles gemaakt kan worden. Het is een hogere programeertaal die at runtime geÃ¯nterpreteerd wordt. Hierdoor is er veel meer overhead dan nodig voor dit \textit{eenvoudige} probleem.
 
 Java biedt een enorme flexibiliteit, wat hier niet echt nodig is en biedt geen ingebouwde backtracking, wat hier wel nodig is.
 
@@ -124,7 +124,7 @@ De belangrijkste gegevens van de \verb|artikel| nodes, zijn \verb|type|, \verb|p
 
 \paragraph{Plaatsing} Er zijn 3 plaatsingsmogelijkheden. Een artikel met een plaatsing \verb|V| moet \textit{vooraan} in de regionale sectie geplaatst worden. Een artikel met plaatsing \verb|M| in het \textit{midden} en een artikel met plaatsing \verb|A| \textit{achteraan}.
 
-\paragraph{Artlayout} Een artikel heeft één of meerdere layouts. Elke layout heeft een uniek (over alle artikels) nummer \verb|id| dat de layout identificeert, een \verb|width| en een \verb|height|, dewelke de afmetingen van de rechthoek waarbinnen het artikel geplaatst zal worden, bepalen.
+\paragraph{Artlayout} Een artikel heeft Ã©Ã©n of meerdere layouts. Elke layout heeft een uniek (over alle artikels) nummer \verb|id| dat de layout identificeert, een \verb|width| en een \verb|height|, dewelke de afmetingen van de rechthoek waarbinnen het artikel geplaatst zal worden, bepalen.
 
 	\section{Algoritme 1}
 		\subsection{Algoritme}
@@ -142,7 +142,7 @@ Elke pagina wordt gediscretiseerd in een paar rijen en kolommen. Voor elk artike
 \paragraph{Zoek vrije ruimte} Het zoeken van een vrije ruimte op de pagina begint bij een startcoordinaat (hier (1,1) van de discrete pagina). Bereken de afmetingen van de rechthoek. Controleer of er overlap is met een ander, eerder geplaatst artikel. Indien er geen overlap is mag het artikel daar geplaatst worden. Indien er wel overlap is, probeer dan de volgende coordinaat. De matrix wordt doorlopen van links naar rechts, en van boven naar onder.
 			
 		\subsection{Uitvoering}
-Met een grid van 10x15 wordt na 0,01s\footnote{Apple MacBook, Intel Core 2 Duo 2,16 GHz, 3 GB RAM, OS X Leopard 10.5.4, ECLiPSe 5.10} de eerste oplossing uitgeprint. De stappen dat het algoritme uitprint zijn weergegeven in listing \ref{listing:opeenvolgendegeplaatsteartikels} (pagina \pageref{listing:opeenvolgendegeplaatsteartikels}). De gegenereerde layout is weergegeven in listing \ref{listing:layouteersteopl}. De volgende oplossing, berekend na 0,05s meer, verschuift het laatst geplaatste artikel (met id 30902) één eenheid naar rechts. De gegenereerde layout is weergegeven in listing \ref{listing:volgendeopl}.
+Met een grid van 10x15 wordt na 0,01s\footnote{Apple MacBook, Intel Core 2 Duo 2,16 GHz, 3 GB RAM, OS X Leopard 10.5.4, ECLiPSe 5.10} de eerste oplossing uitgeprint. De stappen dat het algoritme uitprint zijn weergegeven in listing \ref{listing:opeenvolgendegeplaatsteartikels} (pagina \pageref{listing:opeenvolgendegeplaatsteartikels}). De gegenereerde layout is weergegeven in listing \ref{listing:layouteersteopl}. De volgende oplossing, berekend na 0,05s meer, verschuift het laatst geplaatste artikel (met id 30902) Ã©Ã©n eenheid naar rechts. De gegenereerde layout is weergegeven in listing \ref{listing:volgendeopl}.
 \\
 \\
 Onderstaande tabel toont voor verschillende dimensies de tijd tot het berekenen van respectievelijk de eerste, tweede en zestigste oplossing.
@@ -180,7 +180,7 @@ Het voorgaande algoritme kan op verscheidene punten verbeterd worden.
 		\subsection{Idee}
 Artikels beginnen niet willekeurig op een pagina. Artikels beginnen in een hoek van de pagina of aan de hoek van een ander artikel. Dit zorgt voor een layout waar inherent al weinig whitespace overblijft en een drastisch kleinere zoekruimte (probleem \ref{ZoekenVrijeRuimte}). Deze benadering pakt ook probleem \ref{VerlorenRuimte} aan doordat niet langer op een discreet grid gewerkt wordt.
 
-Het definiëren van een heuristische functie die een score aan een bepaalde layout geeft. Een zoekmethode kan zo zoeken naar een \textit{goede} layout (problemen \ref{KeuzePlaatsArtikel} en \ref{Heuristiek}).
+Het definiÃ«ren van een heuristische functie die een score aan een bepaalde layout geeft. Een zoekmethode kan zo zoeken naar een \textit{goede} layout (problemen \ref{KeuzePlaatsArtikel} en \ref{Heuristiek}).
 
 			\subsubsection{Heuristiek}
 De heuristiek kent een grote score toe aan artikels die goed passen in de al bestaande layout. De heuristische waarde van een plaatsing is (bij benadering) gelijk aan de lengte van de zijden van het artikel die tegen een ander artikel of paginarand liggen. Figuur \ref{fig:inpassingsheur} verduidelijkt het idee.
@@ -208,7 +208,7 @@ Artikels worden aangehecht aan een \textit{ankerpunt}. Een artikel kan aan een a
 	%\label{fig:vb}
 \end{figure}
 
-\paragraph{Opmerking over de gebruikte zoekmethode} In de volgende beschrijving wordt er Greedy Search\footnote{Best first} gebruikt. Andere zoekmethodes zijn ook mogelijk, zoals complete search of optimal search (A*), mits een goede schattingsfunctie voor de uiteindelijke layout op basis van de (reeds gevonden) partiële layout gevonden kan worden.  \\
+\paragraph{Opmerking over de gebruikte zoekmethode} In de volgende beschrijving wordt er Greedy Search\footnote{Best first} gebruikt. Andere zoekmethodes zijn ook mogelijk, zoals complete search of optimal search (A*), mits een goede schattingsfunctie voor de uiteindelijke layout op basis van de (reeds gevonden) partiÃ«le layout gevonden kan worden.  \\
 
 De stappen die worden doorlopen zijn:
 \begin{enumerate}
@@ -265,7 +265,7 @@ Van de Greedy variant zijn er slechts 42 mogelijke oplossingen, de eerste oploss
 
 Van de Complete variant zijn er heel veel\footnote{Grof overschat: 44 plaatsingen kiezen uit 66 artikels  $\cdot$ gemiddeld 2 layouts per artikel $\cdot$ 4 pagina's $\cdot$ 25 ankers per pagina $\cdot$ 4 richtingen per anker $ = C^{52800}_{44} \approx 2E153$ mogelijkheden.} mogelijke oplossingen. De beste oplossing die na 5 dagen rekenen was gevonden had een heuristische score van ongeveer 98000. Bemerk dat dit nog een eind verwijderd is van de score die de Greedy variant na 6 seconden al vindt. Het berekenen van de beste oplossing met complete search\footnote{Met snelheid van $\frac{3,83s}{60 opl} = 6,3E$-2s} zou 1,5E152 seconden duren. Ter vergelijking: het universum bestaat 4,3E17 seconden. Een goede zoekstrategie is dus gerechtvaardigd.
 
-\textit{Hoewel bij beide zoekstrategieën de heuristische waarde wordt berekend, is dit bij de Complete variant louter informatief. Enkel de Greedy variant gebruikt deze waarde om het zoekproces te sturen.}
+\textit{Hoewel bij beide zoekstrategieÃ«n de heuristische waarde wordt berekend, is dit bij de Complete variant louter informatief. Enkel de Greedy variant gebruikt deze waarde om het zoekproces te sturen.}
 
 Beide eerste oplossingen zijn te zien in figuur \ref{fig:layouts}, pagina \pageref{fig:layouts}. De Greedy variant (figuur \ref{fig:layouts:greedy}) bevoordeelt de indirect grote artikels, omdat deze een grotere inpassing kunnen realiseren. Kleinere artikels komen pas later in het zoekproces aan bod, wanneer de pagina's eventueel al vol staan. 
 
@@ -409,7 +409,7 @@ Figuren \ref{fig:placeholders:ph2} en \ref{fig:placeholders:ph3} tonen \textit{e
 
 De kracht van placeholders is tweeledig. Enerzijds is er bijna garantie dat een mooie paginalayout bekomen wordt (zonder chaotisch geplaaste rechthoeken). Elke rechthoek past immers perfect in een andere, grotere, rechthoek dewelke op zijn beurt ... . 
 
-Anderzijds leent dit concept zich tot constraint programming. Het systeem bevat een reeks abstracte placeholders die in één keer of gedeeltelijk kunnen/moeten geconstrueerd worden. Bijvoorbeeld
+Anderzijds leent dit concept zich tot constraint programming. Het systeem bevat een reeks abstracte placeholders die in Ã©Ã©n keer of gedeeltelijk kunnen/moeten geconstrueerd worden. Bijvoorbeeld
 \begin{itemize}
 	\item 
 		\begin{enumerate}
@@ -450,7 +450,7 @@ De constraint op de rechthoek voor artikel 2 (geschrankt geplaatst: rechts uitge
 	
 	Als artikel 3 geplaatst is, kunnen de overblijvende, lege rechthoeken (de witte rechthoeken van figuur \ref{fig:placeholders:ph1}) bepaald worden. Deze worden op hun beurt opgevuld met artikels of nieuwe placeholders.
 	
-	\item Figuur \ref{fig:placeholders:ph2} (placeholder verticale kolom voor $n$ kortjes). Deze kan in één stap opgezet worden en de constraints zijn eenvoudiger.
+	\item Figuur \ref{fig:placeholders:ph2} (placeholder verticale kolom voor $n$ kortjes). Deze kan in Ã©Ã©n stap opgezet worden en de constraints zijn eenvoudiger.
 		\begin{eqnarray*}
 			Article_{i}Width &=& 1 \\
 			\sum_{i=1}^{n}{Article_{i}Height} &=& PlaceholderHeight
@@ -470,12 +470,12 @@ Het probleem moet compact genoeg kunnen voorgesteld worden (waar het Java schoen
 
 Een aantal vakken komen naar de voorgrond. Allereerst is er het vak `Artificiele Intelligentie'\footnote{H01O4A, D. De Schreye} waarin zoekmethodes aan bod komen (waaronder A*, Greedy Search en Branch and Bound). Het vak `Studie van Declaratieve Talen'\footnote{H04H5A, G. Janssens} introduceert Prolog en `Advanced Programming Lanugages for A.I.'\footnote{H02A8A, G. Janssens} vertelt iets meer over constraint programming en ECLiPSe.
 
-De Prolog oplossing werd ge-embed in Java (een vereiste voor projecten die lopen bij XT-i). Het inlezen en parsen van XML bestanden komt in de opleiding niet aan bod, maar het concept XML wordt wel besproken in het vak `Gegevensbanken'\footnote{H01O9A, H. Olivié}. Een goed OO-ontwerp maakt dat het Java programma eenvoudig en modulair is. Hiermee zijn de vakken `Objectgericht Programmeren'\footnote{H01P1A, E. Steegmans} en `Ontwerp en analyse van softwaresystemen, deel 1'\footnote{H04J9A, R. Wuyts} gerelateerd.
+De Prolog oplossing werd ge-embed in Java (een vereiste voor projecten die lopen bij XT-i). Het inlezen en parsen van XML bestanden komt in de opleiding niet aan bod, maar het concept XML wordt wel besproken in het vak `Gegevensbanken'\footnote{H01O9A, H. OliviÃ©}. Een goed OO-ontwerp maakt dat het Java programma eenvoudig en modulair is. Hiermee zijn de vakken `Objectgericht Programmeren'\footnote{H01P1A, E. Steegmans} en `Ontwerp en analyse van softwaresystemen, deel 1'\footnote{H04J9A, R. Wuyts} gerelateerd.
 
 Hoewel niet gebruikt in deze oplossing is de achtergrondkennis over constraint programming (m.n. lineire programmas) in het vak `Besliskunde voor bedrijfsbeheer'\footnote{H01R7A, D. Cattrysse} relevant.
 
 \chapter{Conclusie}
-Een eerste opgave is het juist formuleren van het probleem. De oplossing zoals beschreven in algoritme 1 bleek onvoldoende schaalbaar te zijn. Een betere voorstelling is gegeven in algoritme 2. De variant met de insluitingsheuristiek levert beduidend betere oplossingen. In algoritme 2.1 zijn enkele extra constraints geïmplementeerd. Er is convergentie merkbaar naar wat mensen een \textit{goede} layout zouden vinden en het soort layouts dat de bestaande (trage) oplossing produceert.
+Een eerste opgave is het juist formuleren van het probleem. De oplossing zoals beschreven in algoritme 1 bleek onvoldoende schaalbaar te zijn. Een betere voorstelling is gegeven in algoritme 2. De variant met de insluitingsheuristiek levert beduidend betere oplossingen. In algoritme 2.1 zijn enkele extra constraints geÃ¯mplementeerd. Er is convergentie merkbaar naar wat mensen een \textit{goede} layout zouden vinden en het soort layouts dat de bestaande (trage) oplossing produceert.
 
 Hoewel misschien contradictorisch, geldt de regel: hoe meer constraints hoe beter. De zoekruimte wordt kleiner en zo komt men sneller tot een oplossing, hoe eerder een constraint faalt hoe eerder naar een volgende oplossing gezocht kan worden.
 

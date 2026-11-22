@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{article}
 
-\usepackage[latin1]{inputenc}		%NOTE: Save File as 'Western (ISO Latin 1)'
+\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[dutch]{babel}
 
@@ -42,7 +42,7 @@ Onderstaande figuur toont \textit{een} mogelijke layout, vertrekkende van het XM
 	\section{Idee}
 Artikels beginnen niet willekeurig op een pagina. Artikels beginnen in een hoek van de pagina of aan de hoek van een ander artikel. Dit zorgt voor een layout waar intrinsiek al weinig whitespace overblijft.
 
-De huidige heuristiek zorgt voor een maximale inpassing. De artikels worden één voor één ingepast, waarbij in elke stap wordt geopteerd voor het artikel dat voor de \textit{beste} inpassing zorgt.
+De huidige heuristiek zorgt voor een maximale inpassing. De artikels worden Ã©Ã©n voor Ã©Ã©n ingepast, waarbij in elke stap wordt geopteerd voor het artikel dat voor de \textit{beste} inpassing zorgt.
 
 	\section{Algoritme}
 De pagina is een rechthoek met een bepaalde breedte en hoogte. Artikels zijn rechthoeken met een bepaalde breedte en hoogte en hebben meerdere layouts.
@@ -157,7 +157,7 @@ De onderste figuur \ref{figb} toont de eerste layout die aan alle voorwaarden vo
 %	Naam Bedrijf:	& Chronos NV, XT-i Extreme Implementations \\
 %    Adres Bedrijf:	& Veldkant 35D, 2550 Kontich \\
 %	\\
-%	Naam Stagebegeleider:	& Günther Van Roey, Tim Goffings \\
+%	Naam Stagebegeleider:	& GÃ¼nther Van Roey, Tim Goffings \\
 %	Stageperiode:	& 1 augustus -- 22 augustus, 3 september -- 9 september 2008
 %  \end{tabular}
 %\end{table}
@@ -213,7 +213,7 @@ De onderste figuur \ref{figb} toont de eerste layout die aan alle voorwaarden vo
 
 %\paragraph{Plaatsing} Er zijn 3 plaatsingsmogelijkheden. Een artikel met een plaatsing\verb|V| moet \textit{vooraan} in de regionale sectie geplaatst worden. Een artikel met plaatsing \verb|M| in het \textit{midden} en een artikel met plaatsing \verb|A| \textit{achteraan}.
 
-%\paragraph{Artlayout} Een artikel heeft één of meerdere layouts. Elke layout heeft een uniek (over alle artikels) nummer \verb|id| dat de layout identificeert, een \verb|width| en een \verb|height|, dewelke de afmetingen van de rechthoek waarbinnen het artikel geplaatst zal worden, bepalen.
+%\paragraph{Artlayout} Een artikel heeft Ã©Ã©n of meerdere layouts. Elke layout heeft een uniek (over alle artikels) nummer \verb|id| dat de layout identificeert, een \verb|width| en een \verb|height|, dewelke de afmetingen van de rechthoek waarbinnen het artikel geplaatst zal worden, bepalen.
 
 %	\section{Algoritmes}
 %		\subsection{Versie 1}
@@ -232,7 +232,7 @@ De onderste figuur \ref{figb} toont de eerste layout die aan alle voorwaarden vo
 %\paragraph{Zoek vrije ruimte} Het zoeken naar een vrije ruimte op de pagina gebeurt als volgt. Kies een startcoordinaat (hier (1,1) van de discrete pagina). Bereken de afmetingen van de rechthoek. Controleer of er overlap is met een ander, vroeger geplaatst artikel. Indien er geen overlap is mag het artikel hier geplaatst worden. Indien er wel overlap is, probeer dan de volgende coordinaat. De matrix wordt doorlopen van links naar rechts, en van boven naar onder.
 %			
 %			\subsubsection{Uitvoering}
-%Met een grid van 10x15 wordt na 0,01s\footnote{Apple MacBook, Intel Core 2 Duo 2,16 GHz, 3 GB RAM, OS X Leopard 10.5.4, ECLiPSe 5.10} de eerste oplossing uitgeprint. De stappen dat het algoritme uitprint zijn weergegeven in listing \ref{listing:opeenvolgendegeplaatsteartikels} (pagina \pageref{listing:opeenvolgendegeplaatsteartikels}). De gegenereerde layout is weergegeven in listing \ref{listing:layouteersteopl}. De volgende oplossing, berekend na 0,05s meer, verschuift het laatst geplaatste artikel (met id 30902) één eenheid naar rechts. De gegenereerde layout is weergegeven in listing \ref{listing:volgendeopl}.
+%Met een grid van 10x15 wordt na 0,01s\footnote{Apple MacBook, Intel Core 2 Duo 2,16 GHz, 3 GB RAM, OS X Leopard 10.5.4, ECLiPSe 5.10} de eerste oplossing uitgeprint. De stappen dat het algoritme uitprint zijn weergegeven in listing \ref{listing:opeenvolgendegeplaatsteartikels} (pagina \pageref{listing:opeenvolgendegeplaatsteartikels}). De gegenereerde layout is weergegeven in listing \ref{listing:layouteersteopl}. De volgende oplossing, berekend na 0,05s meer, verschuift het laatst geplaatste artikel (met id 30902) Ã©Ã©n eenheid naar rechts. De gegenereerde layout is weergegeven in listing \ref{listing:volgendeopl}.
 %\\
 %\\
 %Onderstaande tabel toont voor verschillende dimensies de tijd tot het berekenen van respectievelijk de eerste, tweede en zestigste oplossing.
